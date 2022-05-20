@@ -23,7 +23,7 @@ namespace VMK_BindingData_DGV2022_04_05
         private int _id;
         private string _fname;
         private string _sname;
-        private DateTime _dateBirth;
+        //private DateTime _dateBirth;
         private bool _isMale;
         private double _salary;
         private short _delay;
@@ -63,7 +63,7 @@ namespace VMK_BindingData_DGV2022_04_05
                 OnPropertyChanged();
             }
         }
-
+/*
         [DisplayName("Дата рождения")]
         public DateTime DateBirth
         {
@@ -76,7 +76,7 @@ namespace VMK_BindingData_DGV2022_04_05
                 OnPropertyChanged();
             }
         }
-        
+        */
         [DisplayName("Мужчина?")]
         public bool IsMale
         {
@@ -119,7 +119,7 @@ namespace VMK_BindingData_DGV2022_04_05
             Fname =  fname;
             Sname = sname;
             IsMale = ismale;
-            DateBirth = birthdate;
+           // DateBirth = birthdate;
             Salary = salary;
             Delay = delay;
         }
@@ -132,7 +132,7 @@ namespace VMK_BindingData_DGV2022_04_05
             _fname = "-";
             _sname = "-";
             _isMale = true;
-            _dateBirth = new DateTime(1754, 01, 01);
+            //_dateBirth = new DateTime(1754, 01, 01);
             _salary = 1;
             _delay = 0;
         }
@@ -146,7 +146,7 @@ namespace VMK_BindingData_DGV2022_04_05
             a.Fname = _fname;
             a.Sname = _sname;
             a.IsMale = _isMale;
-            a.DateBirth = _dateBirth;
+            //a.DateBirth = _dateBirth;
             a.Salary = _salary;
             return (a);
         }
@@ -162,7 +162,7 @@ namespace VMK_BindingData_DGV2022_04_05
                 trd.Id = _id;
                 trd.Sname = _sname;
                 trd.IsMale = _isMale;
-                trd.DateBirth = _dateBirth;
+              //  trd.DateBirth = _dateBirth;
                 trd.Salary = _salary;
             }
         }
