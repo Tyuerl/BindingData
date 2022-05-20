@@ -30,7 +30,7 @@ public partial class EditForm : Form
 
         // Производим связывание данных между графическими элементами и свойством с хранимой информацией об объекте
         numericUpDown1.DataBindings.Add("Value", UserData, "Id");
-        dateTimePicker1.DataBindings.Add("Value", UserData, "DateBirth");
+        //dateTimePicker1.DataBindings.Add("Value", UserData, "DateBirth");
         numericUpDown2.DataBindings.Add("Value", UserData, "Salary");
         checkBox1.DataBindings.Add("Checked", UserData, "IsMale");
         delay.DataBindings.Add("Value", UserData, "Delay");
